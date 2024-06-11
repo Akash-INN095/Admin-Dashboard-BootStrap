@@ -1,0 +1,111 @@
+/* Ensure the html and body take up full height */
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 1rem !important;
+  font-family: var(--bs-font-sans-serif);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Ensure the sidebar occupies full height */
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  z-index: 1; /* Add a higher z-index to keep the sidebar on top */
+  color: #212529;
+}
+
+/* Override Bootstrap's .nav-link styles for the sidebar */
+#sidebarMenu .nav-link {
+  font-weight: bold !important; /* Set text to bold */
+  font-size: 0.873rem !important; /* Set font size */
+}
+
+/* Highlight the active nav link with dark grey background */
+#sidebarMenu .nav-link.active {
+  background-color: #0d6efd !important; /* Set background color to dark grey */
+  color: #fff !important; /* Ensure text color is white for better contrast */
+}
+
+header.navbar {
+  padding-top: 1rem; /* Adjust this value to increase top padding */
+  padding-bottom: 1rem; /* Adjust this value to increase bottom padding  */
+  /* height: 3rem; Ensures the height adjusts to the padding */
+  width: 100%;
+}
+
+/* Main content area */
+.main-content {
+  margin-left: 200px; /* Adjust this value to match the sidebar width */
+  padding: 3rem 1rem 1rem; /* Add top padding of 3rem for spacing from navbar */
+}
+
+/* Center the card container */
+.container {
+  max-width: 960px; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Search Box */
+.search-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.doc-search-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.doc-search-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.doc-search-button-placeholder {
+  margin-left: 8px;
+}
+
+/* Card group styling */
+.d-flex.gap-3 {
+  display: flex;
+  gap: 1rem; /* Adjust this value to set the gap between cards */
+  justify-content: space-between;
+}
+
+/* Ensure all cards have the same width */
+.card {
+  flex: 1; /* Makes all cards take up equal space */
+  min-width: 0; /* Prevents cards from overflowing the container */
+  border: 1px solid #171a1c !important;
+}
+
+/* Card heading */
+.card-heading {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 1rem; /* Add padding to make the content inside the heading area look better */
+  margin: -1rem -1rem 1rem -1rem; /* Adjust the margins to ensure the background color spans the full width */
+  border-radius: 0.25rem 0.25rem 0 0; /* Optional: round the top corners if desired */
+}
+
+#card-class{
+  margin-bottom: 20px;
+}
+
+.navbar-toggler {
+  color: white;
+  border-color: white;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28white%2C 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
